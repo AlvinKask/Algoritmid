@@ -1,3 +1,4 @@
+#### Tehtud tööd
 - 04.10.2022 (001-003)
 - 21.10.2022 (004-
 
@@ -158,17 +159,19 @@ print("Maksimum =",maksimum)
 ```
 
 # Pr_007
-- KORDUSLAUSED (WHILE DO), MIS OTSIVAD MAKSIMUMI
+- KORDUSLAUSED (DO WHILE & WHILE), MIS OTSIVAD MAKSIMUMI (KÜSIDES ETTE MITUT NUMBRIT ME VÕRDLEME)
 - Seotud: Alg_007  
+![Alg_007](https://user-images.githubusercontent.com/115221752/197137251-5d6f2330-9c20-4368-aca7-cf500049a15c.JPG)
 
+- Alternatiivne algus
 ```
-arv=int(input("Sisesta esimene arv "))
-maksimum=arv
-loendur=2
-while(loendur<=5):
-    arv=int(input("Sisesta järgmine arv "))
-    if(arv>maksimum):
-        maksimum=arv
-    loendur+=1   ## Sama, mis loendur=loendur+1
-print("Maksimum =",maksimum)
+while(True):
+    mitu=int(input("Sisesta mitut arvu soovid omavahel võrrelda "))
+    if (mitu>0):
+        break
+```
+```
+mitu=0
+while(mitu<=0):
+    mitu=int(input("Sisesta mitut arvu soovid omavahel võrrelda "))
 ```
