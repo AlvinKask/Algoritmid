@@ -99,7 +99,6 @@ else:
     else:
         print("Maksimum =",arv3)
 ```
-[Algoritmid.zip](https://github.com/AlvinKask/algoritmid/files/9836028/Algoritmid.zip)
 
 # Pr_004
 - 3 loogilist tehet (AND, OR, NOT)
@@ -110,11 +109,8 @@ arv1=int(input("Esimene arv "))
 arv2=int(input("Teine arv "))
 arv3=int(input("Kolmas arv "))
 
-if (arv1>=arv2):
-    if(arv1>=arv3):
-        print("Maksimum =",arv1)
-    else:
-        print("Maksimum =",arv3)    
+if (arv1>=arv2 and arv1>=arv3):
+    print("Maksimum =",arv1)    
 else:
     if(arv2>=arv3):
         print("Maksimum =",arv2)
