@@ -2,6 +2,7 @@
 - Programmeerimise õpik - https://progeopik.cs.ut.ee/01_sissejuhatus.html  
 - KÜSIME 2 TÄISARVU JA TEEME 7 PÕHILIST ARITMEETILIST TEHET  
 - Seotud: Alg_001  
+![Alg_001](https://user-images.githubusercontent.com/115221752/197119739-80afe7b7-6d8a-4399-afe8-798e29f81e6b.JPG)
 
 `print("Esimene arv ")`  
 - Kuvab teksti ekraanile  
@@ -36,6 +37,8 @@ print(arv1, "Aste", arv2, "=",arv1**arv2)
 # Pr_002
 - KÜSIME 2 TÄISARVU JA LEIAME KUMB ARV ON SUUREM JA MIS ON NEDE MAKSIMUM VÄÄRTUS  
 - Seotud: Alg_002  
+![Alg_002](https://user-images.githubusercontent.com/115221752/197119812-0effe90b-013a-4d88-8d60-52b3c4a8d719.JPG)
+
 ```
 arv1=int(input("Esimene arv "))
 arv2=int(input("Teine arv "))
@@ -78,6 +81,28 @@ else:
 # Pr_003
 - KÜSIME 3 TÄISARVU JA LEIAME NENDE MAKSIMAALSE VÄÄRTUSE  
 - Seotud: Alg_003  
+![Alg_003](https://user-images.githubusercontent.com/115221752/197119860-68303c1a-7184-453f-9b76-696add9d05e5.JPG)
+
+```
+arv1=int(input("Esimene arv "))
+arv2=int(input("Teine arv "))
+arv3=int(input("Kolmas arv "))
+
+if (arv1>=arv2):
+    if(arv1>=arv3):
+        print("Maksimum =",arv1)
+    else:
+        print("Maksimum =",arv3)    
+else:
+    if(arv2>=arv3):
+        print("Maksimum =",arv2)
+    else:
+        print("Maksimum =",arv3)
+```
+
+# Pr_004
+-   
+- Seotud: Alg_004  
 ```
 arv1=int(input("Esimene arv "))
 arv2=int(input("Teine arv "))
