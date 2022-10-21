@@ -1,3 +1,8 @@
+## 04.10.2022
+[2022.10.07.zip](https://github.com/AlvinKask/algoritmid/files/9836408/2022.10.07.zip)
+
+## 21.10.2022
+
 # Pr_001
 - Programmeerimise õpik - https://progeopik.cs.ut.ee/01_sissejuhatus.html  
 - KÜSIME 2 TÄISARVU JA TEEME 7 PÕHILIST ARITMEETILIST TEHET  
@@ -137,7 +142,7 @@ print("Maksimum =",maksimum)
 ```
 
 # Pr_006
-- KORDUSLAUSED, MIS OTSIVAD MAKSIMUMI
+- KORDUSLAUSED (WHILE), MIS OTSIVAD MAKSIMUMI
 - Seotud: Alg_006  
 ![Alg_006](https://user-images.githubusercontent.com/115221752/197129691-e30717d3-719f-4d95-a804-0559385e15f0.JPG)
 
@@ -154,9 +159,8 @@ print("Maksimum =",maksimum)
 ```
 
 # Pr_007
-- KORDUSLAUSED, MIS OTSIVAD MAKSIMUMI
+- KORDUSLAUSED (WHILE DO), MIS OTSIVAD MAKSIMUMI
 - Seotud: Alg_007  
-
 
 ```
 arv=int(input("Sisesta esimene arv "))
