@@ -159,6 +159,8 @@ print("Maksimum =",maksimum)
 ```
 
 # Pr_007
+- = is an assignment operator
+- == is an equality operator
 - KORDUSLAUSED (DO WHILE & WHILE), MIS OTSIVAD MAKSIMUMI (KÜSIDES ETTE MITUT NUMBRIT ME VÕRDLEME)
 - Seotud: Alg_007  
 ![Alg_007](https://user-images.githubusercontent.com/115221752/197137251-5d6f2330-9c20-4368-aca7-cf500049a15c.JPG)
@@ -170,8 +172,18 @@ while(True):
     if (mitu>0):
         break
 ```
+- Soovituslik algus
 ```
 mitu=0
 while(mitu<=0):
     mitu=int(input("Sisesta mitut arvu soovid omavahel võrrelda "))
+loendur=1
+while(loendur<=mitu):
+    arv=int(input("Sisesta arv " + str(loendur) + " "))
+    if(loendur==1):
+        maksimum=arv
+    elif(arv>maksimum):
+        maksimum=arv
+    loendur+=1
+print("Maksimum =",maksimum)
 ```
