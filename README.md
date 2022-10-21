@@ -102,7 +102,27 @@ else:
 
 # Pr_004
 - 3 loogilist tehet (AND, OR, NOT)
-- LOOGILINE KORRUTIS
+- LOOGILINE KORRUTIS (AND) - LEIAME 3 TÄISARVU MAKSIMUMI
+- Seotud: Alg_004  
+![Alg_004](https://user-images.githubusercontent.com/115221752/197122889-f7c29c68-d064-4685-9195-1b1310763b73.JPG)
+
+```
+arv1=int(input("Esimene arv "))
+arv2=int(input("Teine arv "))
+arv3=int(input("Kolmas arv "))
+
+if (arv1>=arv2 and arv1>=arv3):
+    maksimum = arv1    
+elif(arv2>=arv3):
+    maksimum =arv2
+else:
+    maksimum =arv3
+print("Maksimum =",maksimum)
+```
+
+# Pr_005
+- 3 loogilist tehet (AND, OR, NOT)
+- LOOGILINE KORRUTIS - LEIAME 3 TÄISARVU MAKSIMUMI
 - Seotud: Alg_004  
 ![Alg_004](https://user-images.githubusercontent.com/115221752/197122889-f7c29c68-d064-4685-9195-1b1310763b73.JPG)
 
@@ -117,5 +137,4 @@ else:
     if(arv2>=arv3):
         print("Maksimum =",arv2)
     else:
-        print("Maksimum =",arv3)
-```
+        p
