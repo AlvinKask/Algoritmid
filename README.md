@@ -1,6 +1,6 @@
 #### Tehtud tööd
 - 04.10.2022 (001-003)
-- 21.10.2022 (004-
+- 21.10.2022 (004-008)
 
 
 # Pr_001
@@ -159,8 +159,8 @@ print("Maksimum =",maksimum)
 ```
 
 # Pr_007
-- = is an assignment operator
-- == is an equality operator
+- = is an assignment operator (omistamine)
+- == is an equality operator (võrdus)
 - KORDUSLAUSED (DO WHILE & WHILE), MIS OTSIVAD MAKSIMUMI (KÜSIDES ETTE MITUT NUMBRIT ME VÕRDLEME)
 - Seotud: Alg_007  
 ![Alg_007](https://user-images.githubusercontent.com/115221752/197137251-5d6f2330-9c20-4368-aca7-cf500049a15c.JPG)
@@ -186,4 +186,25 @@ while(loendur<=mitu):
         maksimum=arv
     loendur+=1
 print("Maksimum =",maksimum)
+```
+
+# Pr_008
+- ARITMEETILINE JADA (FOR TSÜKKEL) (näiteks 2+5+8+11+14+17=57)  
+- Seotud: Alg_008  
+![Alg_008](https://user-images.githubusercontent.com/115221752/197147813-290bc8a4-b393-443a-a27a-7a05df8e0a95.JPG)
+
+```
+esimene=2
+samm=3
+mitu=6
+summa=0
+arv=esimene
+for loendur in range(1,mitu+1,1):   #esimene on alguse aste, teine sammude arv, kolmas on samm
+    if(loendur==1 or arv<0):
+        print(arv,end="")
+    else:
+        print("+"+str(arv),end="")
+    summa+=arv   # summa+1=arv
+    arv+=samm   # arv+1=samm
+print("="+str(summa))
 ```
