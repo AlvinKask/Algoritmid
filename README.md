@@ -104,6 +104,8 @@ else:
 - 3 loogilist tehet (AND, OR, NOT)
 - LOOGILINE KORRUTIS
 - Seotud: Alg_004  
+![Alg_004](https://user-images.githubusercontent.com/115221752/197122889-f7c29c68-d064-4685-9195-1b1310763b73.JPG)
+
 ```
 arv1=int(input("Esimene arv "))
 arv2=int(input("Teine arv "))
