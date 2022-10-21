@@ -112,29 +112,60 @@ arv2=int(input("Teine arv "))
 arv3=int(input("Kolmas arv "))
 
 if (arv1>=arv2 and arv1>=arv3):
-    maksimum = arv1    
+    maksimum=arv1    
 elif(arv2>=arv3):
-    maksimum =arv2
+    maksimum=arv2
 else:
-    maksimum =arv3
+    maksimum=arv3
 print("Maksimum =",maksimum)
 ```
 
 # Pr_005
-- 3 loogilist tehet (AND, OR, NOT)
-- LOOGILINE KORRUTIS - LEIAME 3 TÄISARVU MAKSIMUMI
-- Seotud: Alg_004  
-![Alg_004](https://user-images.githubusercontent.com/115221752/197122889-f7c29c68-d064-4685-9195-1b1310763b73.JPG)
+- LEIAME IGA JÄRGNEVA TÄISARVU HULGAST MAKSIMUMI
+- Seotud: Alg_005  
 
 ```
 arv1=int(input("Esimene arv "))
 arv2=int(input("Teine arv "))
 arv3=int(input("Kolmas arv "))
+maksimum=arv1
+if (arv2>=maksimum):
+    maksimum =arv2
+if (arv3>=maksimum):
+    maksimum =arv3
+print("Maksimum =",maksimum)
+```
 
-if (arv1>=arv2 and arv1>=arv3):
-    print("Maksimum =",arv1)    
-else:
-    if(arv2>=arv3):
-        print("Maksimum =",arv2)
-    else:
-        p
+# Pr_006
+- KORDUSLAUSED, MIS OTSIVAD MAKSIMUMI
+- Seotud: Alg_006  
+![Alg_006](https://user-images.githubusercontent.com/115221752/197129691-e30717d3-719f-4d95-a804-0559385e15f0.JPG)
+
+```
+arv=int(input("Sisesta esimene arv "))
+maksimum=arv
+loendur=2
+while(loendur<=5):
+    arv=int(input("Sisesta järgmine arv "))
+    if(arv>maksimum):
+        maksimum=arv
+    loendur+=1   ## Sama, mis loendur=loendur+1
+print("Maksimum =",maksimum)
+```
+
+# Pr_007
+- KORDUSLAUSED, MIS OTSIVAD MAKSIMUMI
+- Seotud: Alg_007  
+
+
+```
+arv=int(input("Sisesta esimene arv "))
+maksimum=arv
+loendur=2
+while(loendur<=5):
+    arv=int(input("Sisesta järgmine arv "))
+    if(arv>maksimum):
+        maksimum=arv
+    loendur+=1   ## Sama, mis loendur=loendur+1
+print("Maksimum =",maksimum)
+```
