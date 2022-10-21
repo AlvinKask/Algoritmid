@@ -99,9 +99,11 @@ else:
     else:
         print("Maksimum =",arv3)
 ```
+[Algoritmid.zip](https://github.com/AlvinKask/algoritmid/files/9836028/Algoritmid.zip)
 
 # Pr_004
--   
+- 3 loogilist tehet (AND, OR, NOT)
+- LOOGILINE KORRUTIS
 - Seotud: Alg_004  
 ```
 arv1=int(input("Esimene arv "))
