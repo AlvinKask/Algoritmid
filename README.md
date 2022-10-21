@@ -1,7 +1,7 @@
 #### Tehtud tööd
 - 04.10.2022 (001-003)
 - 21.10.2022 (004-008)
-
+[2022.10.21.zip](https://github.com/AlvinKask/algoritmid/files/9837152/2022.10.21.zip)
 
 # Pr_001
 - Programmeerimise õpik - https://progeopik.cs.ut.ee/01_sissejuhatus.html  
