@@ -1,10 +1,12 @@
+- Programmeerimise õpik - https://progeopik.cs.ut.ee/ 
+
 #### Tehtud tööd
 - 04.10.2022 (001-003)  
 - 21.10.2022 (004-008)  
+- 04.11.2022 (009-0)  
 [2022.10.21.zip](https://github.com/AlvinKask/algoritmid/files/9837152/2022.10.21.zip)
 
 # Pr_001
-- Programmeerimise õpik - https://progeopik.cs.ut.ee/01_sissejuhatus.html  
 - KÜSIME 2 TÄISARVU JA TEEME 7 PÕHILIST ARITMEETILIST TEHET  
 - Seotud: Alg_001  
 ![Alg_001](https://user-images.githubusercontent.com/115221752/197119739-80afe7b7-6d8a-4399-afe8-798e29f81e6b.JPG)
@@ -207,4 +209,68 @@ for loendur in range(1,mitu+1,1):   #esimene on alguse aste, teine sammude arv, 
     summa+=arv   # summa+1=arv
     arv+=samm   # arv+1=samm
 print("="+str(summa))
+```
+
+# Pr_009
+- FUNKTSIOONI KASUTAMINE. TAVALINE JA REKURSIIVNE JADA. PROGRAMM KÜSIB PARAMEETRID ALGUSES
+```
+def ajada(e,s,n):   # Funktsiooni nimi ja selle parameetrid
+    arv=e
+    for i in range(2,n+1):
+        arv=arv+s
+    return arv
+
+esimene=int(input("alg --> "))
+samm=int(input("samm --> "))
+mitu=int(input("mitu --> "))
+print("\n")   # Tühi rida
+for i in range(1,mitu+1):
+    print(ajada(esimene,samm,i),end=' ')
+print("\n")
+
+
+def ajada_R(e,s,n):   # Rekursiivne jada
+    if(n==1):
+        return e
+    else:
+        return ajada_R(e,s,n-1)+s
+print("\n")
+for i in range(1,mitu+1):
+    print(ajada_R(esimene,samm,i),end=' ')
+print("\n")
+```
+
+# Pr_010
+- FIBONACCI JADA. TAVALINE JA REKURSIIVNE
+```
+def Fib(n):   # Fibonacci jada esimene number
+    if(n==0):
+        return 0
+    elif(n==1):
+        return 1
+    else:
+        arv1=0
+        arv2=1
+        for i in range(2,n+1):
+            arv3=arv1+arv2
+            arv1=arv2
+            arv2=arv3
+        return arv3
+
+mitu=int(input("mitu --> "))
+print("\n")
+for i in range(1,mitu+1):
+    print(Fib(i),end=' ')
+print("\n")
+
+
+def Fib_R(n):
+    if(n==0): return 0
+    elif(n==1): return 1
+    else:
+        return Fib_R(n-1) + Fib_R(n-2)
+
+for i in range(1,mitu+1):
+    print(Fib_R(i),end=' ')
+print("\n")
 ```
