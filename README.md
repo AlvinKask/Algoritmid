@@ -3,8 +3,8 @@
 #### Tehtud tööd
 - 04.10.2022 (001-003)  
 - 21.10.2022 (004-008)  
-- 04.11.2022 (009-0)  
-[2022.10.21.zip](https://github.com/AlvinKask/algoritmid/files/9837152/2022.10.21.zip)
+- 04.11.2022 (009-011)  
+[2022.11.04.zip](https://github.com/AlvinKask/algoritmid/files/9936797/2022.11.04.zip)
 
 # Pr_001
 - KÜSIME 2 TÄISARVU JA TEEME 7 PÕHILIST ARITMEETILIST TEHET  
@@ -265,12 +265,36 @@ print("\n")
 
 
 def Fib_R(n):
-    if(n==0): return 0
-    elif(n==1): return 1
+    if(n==0):
+        return 0
+    elif(n==1):
+        return 1
+    elif(n<0):
+        return Fib_R(n+2) - Fib_R(n+1)
     else:
-        return Fib_R(n-1) + Fib_R(n-2)
-
-for i in range(1,mitu+1):
+        return Fib_R(n-2) + Fib_R(n-1)
+ 
+for i in range(-mitu,mitu+1):
     print(Fib_R(i),end=' ')
 print("\n")
+```
+
+# Pr_011
+- FIBONACCI JADA MASSIIVIGA
+- Seotud: Alg_011
+![Alg_011](https://user-images.githubusercontent.com/115221752/199935028-a6a2418f-7887-495b-a546-df715cbf43a6.JPG)
+  
+```
+# Fibonacci jada massiiviga
+k = int(input("Fibonacci jada suurus: "))
+
+# Sisestame k+1 kuna lugemist alustatakse 0'st
+Fib=[0]*(k+1)
+
+Fib[0]=0
+Fib[1]=1
+for i in range(2,k+1):
+    Fib[i]=Fib[i-1]+Fib[i-2]
+print(Fib)
+print(*Fib)   #Kustutab sulud, komad... jätab alles numbrid
 ```
