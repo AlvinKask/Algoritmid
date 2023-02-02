@@ -1,5 +1,8 @@
 - Programmeerimise õpik - https://progeopik.cs.ut.ee/ 
 
+- [OOP_raamat.pdf](https://github.com/AlvinKask/Algoritmid/files/10565749/OOP_raamat.pdf)
+
+
 #### Tehtud tööd
 - 04.10.2022 (001-003)  
 - 21.10.2022 (004-008)  
